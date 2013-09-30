@@ -6,10 +6,6 @@
 * Caso você possua instalada a versão 3.0 do Geplanes, vá para o item: <b>Atualização da Versão 3.0 para a Versão 3.0.3</b>.
 * Caso você possua instalada a versão 3.0.1 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.1 para a Versão 3.0.3</b>.
 * Caso você possua instalada a versão 3.0.2 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.2 para a Versão 3.0.3</b>.
-
-* Inicie o JBoss (execute o arquivo <b><i>run.bat</b></i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)
-* Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)
-* Digite a URL: <b><i>http://localhost:8080/geplanes_bsc</b></i>
 * Caso você possua instalada a versão 3.0.2 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.2 para a Versão 3.0.3</b>.
 
 ## 2. Instalação do Geplanes - Versão 3.0.3
