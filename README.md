@@ -10,17 +10,11 @@
 
 ## 2.1. Pré-Requisitos
 
-* Java Development Kit: JDK6 (Vide seção 2.1 do Manual de Instalação da Versão 1.0 em
+* Java Development Kit: JDK6 (Vide seção 2.1 do Manual de Instalação da Versão 1.0 em http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
-http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
+* Banco de Dados: PostgreSQL 8.3.10-1 (Vide seção 2.2do Manual de Instalação da Versão 1.0 em http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
-* Banco de Dados: PostgreSQL 8.3.10-1 (Vide seção 2.2do Manual de Instalação da Versão 1.0 em
-
-http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
-
-* Servidor de Aplicação: JBoss 4.0.5 GA (Vide seção 2.3 do Manual de Instalação da Versão 1.0 em
-
-http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
+* Servidor de Aplicação: JBoss 4.0.5 GA (Vide seção 2.3 do Manual de Instalação da Versão 1.0 em http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
 ## 2.2. Criação e configuração do Banco de Dados
 
@@ -30,15 +24,11 @@ Para isso, proceda da seguinte forma:
 
 Abra o prompt de comando (cmd.exe) e vá até a pasta bin do diretório onde foi instalado o PostgreSQL.
 
-
-c:\> cd "c:\Program Files\PostgreSQL\8.3\bin"
-
+    c:\> cd "c:\Program Files\PostgreSQL\8.3\bin"
 
 Em seguida, digite o seguinte comando para criar o banco de dados:
 
-
-c:\Program Files\PostgreSQL\8.3\bin>createdb.exe -U postgres geplanes_bsc
-
+    c:\Program Files\PostgreSQL\8.3\bin>createdb.exe -U postgres geplanes_bsc
 
 Entre com a senha do usuário postgres e pronto. Está criado o banco de dados. Veja figura abaixo:
 
@@ -47,7 +37,7 @@ Entre com a senha do usuário postgres e pronto. Está criado o banco de dados. 
 
 O próximo passo é executar o script para criação das tabelas do geplanes. Para isso, basta executar o seguinte comando:
 
-c:\Program Files\PostgreSQL\8.3\bin>psql.exe -U pos tgres -f c:\Temp\geplanes-3.0.3_new.sql -d geplanes _bsc
+    c:\Program Files\PostgreSQL\8.3\bin>psql.exe -U pos tgres -f c:\Temp\geplanes-3.0.3_new.sql -d geplanes _bsc
 
 * Aqui, assume-se que o arquivo geplanes-3.0.3_new.sql (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar) esteja no diretório Temp da Unidade C. Caso esteja em outro local, basta alterar o caminho acima.
 
