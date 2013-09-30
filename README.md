@@ -109,7 +109,7 @@ Faça o download do arquivo <b><i>geplanes-3.0.3.war.rar</b></i> (http://www.sof
 
 ## 3.5. Execução da Aplicação
 
-* Inicie o JBoss (execute o arquivo run.bat dentro da pasta bin do diretório de instalação doJBoss)
+* Inicie o JBoss (execute o arquivo <i><b>run.bat</b></i> dentro da pasta bin do diretório de instalação doJBoss)
 * Abra o browser (preferencialmente IE7 ou Firefox 3)
 * Digite a URL: <b><i>http://localhost:8080/geplanes_bsc</b></i>
 * Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
