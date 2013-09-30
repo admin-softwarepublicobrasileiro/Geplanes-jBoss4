@@ -48,7 +48,7 @@ Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (http://www.softwarepu
 
 Faça o download do arquivo <i>geplanes_bsc_postgresql-ds.xml.rar</i> (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc_postgresql-ds%2exml%2erar), descompacte-o e configure (via bloco de notas ou qualquer outro editor de texto) os parâmetros de acesso ao banco de dados. Posteriormente, copie esse arquivo para a pasta <i>server/default/deploy</i> do diretório de instalação do JBoss.
 
-Caso o Geplanes seja acessado via rede, você precisará criar pelo menos mais um bloco de configuração de acesso ao banco de dados dentro do arquivo <i>geplanes _bsc_postgresql-ds.xml</i>. Imagine que o Geplanes tenha sido instalado na máquina cujo IP seja <b>192.168.1.54</i> e cujo nome seja <b>srv54</b>.
+Caso o Geplanes seja acessado via rede, você precisará criar pelo menos mais um bloco de configuração de acesso ao banco de dados dentro do arquivo <i>geplanes _bsc_postgresql-ds.xml</i>. Imagine que o Geplanes tenha sido instalado na máquina cujo IP seja <b>192.168.1.54</b> e cujo nome seja <b>srv54</b>.
 
 Para que o Geplanes seja acessado pela URL <b>http://192.168.1.54:8080/geplanes_bsc</b> é necessária a criação do seguinte bloco de código dentro do arquivo <i>geplanes_bsc_postgresql-ds.xml</i>:
     
