@@ -10,15 +10,15 @@
 
 ## 2.1. Pré-Requisitos
 
-•Java Development Kit: JDK6 (Vide seção 2.1 do Manual de Instalação da Versão 1.0 em 
+•Java Development Kit: JDK6 (Vide seção 2.1 do Manual de Instalação da Versão 1.0 em
 
 http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
-•Banco de Dados: PostgreSQL 8.3.10-1 (Vide seção 2.2do Manual de Instalação da Versão 1.0 em 
+•Banco de Dados: PostgreSQL 8.3.10-1 (Vide seção 2.2do Manual de Instalação da Versão 1.0 em
 
 http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
-•Servidor de Aplicação: JBoss 4.0.5 GA (Vide seção 2.3 do Manual de Instalação da Versão 1.0 em 
+•Servidor de Aplicação: JBoss 4.0.5 GA (Vide seção 2.3 do Manual de Instalação da Versão 1.0 em
 
 http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf)
 
@@ -30,11 +30,15 @@ Para isso, proceda da seguinte forma:
 
 Abra o prompt de comando (cmd.exe) e vá até a pasta bin do diretório onde foi instalado o PostgreSQL.
 
+
 c:\> cd "c:\Program Files\PostgreSQL\8.3\bin".
 
-Em seguida, digite o seguinte comando para criar o banco de dados: 
+
+Em seguida, digite o seguinte comando para criar o banco de dados:
+
 
 c:\Program Files\PostgreSQL\8.3\bin>createdb.exe -U postgres geplanes_bsc.
+
 
 Entre com a senha do usuário postgres e pronto. Está criado o banco de dados. Veja figura abaixo:
 
@@ -47,11 +51,11 @@ c:\Program Files\PostgreSQL\8.3\bin>psql.exe -U pos tgres -f c:\Temp\geplanes-3.
 
 * Aqui, assume-se que o arquivo geplanes-3.0.3_new.sql (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar) esteja no diretório Temp da Unidade C. Caso esteja em outro local, basta alterar o caminho acima.
 
-## 2.3. Deploy da Versão 3.0.3 
+## 2.3. Deploy da Versão 3.0.3
 
 Faça o download do arquivo geplanes-3.0.3.war.rar (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar), descompacte-o e copie a pastageplanes_bsc.war para dentro do diretório server/default/deploy , localizado dentro do diretório de instalação do JBoss.
 
-## 2.4. Configuração do Servidor de Aplicação (JBoss) para acesso ao banco de dados 
+## 2.4. Configuração do Servidor de Aplicação (JBoss) para acesso ao banco de dados
 
 Faça o download do arquivo geplanes_bsc_postgresql-ds.xml.rar (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc_postgresql-ds%2exml%2erar), descompacte-o e configure (via bloco de notas ou qualquer outro editor de texto) os parâmetros de acesso ao banco de dados. Posteriormente, copie esse arquivo para a pasta server/default/deploy do diretório de instalação do JBoss.
 
@@ -150,60 +154,30 @@ Faça o download do arquivo geplanes-3.0.3.war.rar (http://www.softwarepublico.g
 * Digite a URL: http://localhost:8080/geplanes_bsc
 * Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
 
+##5. Atualização da Versão 3.0.2 para a Versão 3.0.3
 
-8
-5.
-Atualização da Versão 3.0.2 para a Versão 3.0.3
-5.1. Pré-Requisitos
-•
-Sistema Geplanes 3.0.2 instalado.
-5.2. Undeploy da Versão anterior
-•
-Caso o JBoss esteja ligado, desligue-o.
-•
-Remova a pasta
-geplanes_bsc.war
-do diretório
-server/default/deploy
-, localizado dentro do
-diretório de instalação do JBoss.
-•
-Vá até a pasta
-/server/default/tmp
-do diretório de instalação do JBoss e apague todo o
-seu
-conteúdo, deixando-a vazia.
-•
-Vá até a pasta /server/default/work do diretório de
-instalação do JBoss e apague todo o seu
-conteúdo, deixando-a vazia.
-5.3. Atualização do Banco de Dados
-•
-Não houve atualização do banco de dados.
-5.4. Deploy da Versão 3.0.3
-Faça o download do arquivo
-geplanes-3.0.3.war.rar
-(
-http://www.softwarepublico.gov.br/dotlrn/clubs/gepl
-anes/file-storage/view/metodologia-bsc/vers-
-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2era
-r
-), descompacte-o e copie a pasta
-geplanes_bsc.war
-para dentro do diretório
-server/default/deploy
-, localizado dentro do diretório de
-instalação do JBoss.
-5.5. Execução da Aplicação
-•
-Inicie o JBoss (execute o arquivo run.bat dentro d
-a pasta bin do diretório de instalação do
-JBoss)
-•
-Abra o browser
-•
-Digite a URL:
-http://localhost:8080/geplanes_bsc
-•
-Entre com os dados de usuário (LOGIN/SENHA): (Defau
-lt: admin/admin)
+##5.1. Pré-Requisitos
+
+• Sistema Geplanes 3.0.2 instalado.
+
+##5.2. Undeploy da Versão anterior
+
+• Caso o JBoss esteja ligado, desligue-o.
+• Remova a pasta geplanes_bsc.war do diretório server/default/deploy, localizado dentro do diretório de instalação do JBoss.
+• Vá até a pasta/server/default/tmp do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.
+• Vá até a pasta /server/default/work do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.
+
+##5.3. Atualização do Banco de Dados
+
+• Não houve atualização do banco de dados.
+
+##5.4. Deploy da Versão 3.0.3
+
+Faça o download do arquivo geplanes-3.0.3.war.rar (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar), descompacte-o e copie a pastageplanes_bsc.war para dentro do diretório server/default/deploy, localizado dentro do diretório de instalação do JBoss.
+
+##5.5. Execução da Aplicação
+
+• Inicie o JBoss (execute o arquivo run.bat dentro da pasta bin do diretório de instalação do JBoss)
+• Abra o browser
+• Digite a URL: http://localhost:8080/geplanes_bsc
+• Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
