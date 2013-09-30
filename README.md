@@ -38,7 +38,7 @@ O próximo passo é executar o script para criação das tabelas do geplanes. Pa
 
     c:\Program Files\PostgreSQL\8.3\bin>psql.exe -U pos tgres -f c:\Temp\geplanes-3.0.3_new.sql -d geplanes _bsc
 
-* Aqui, assume-se que o arquivo <b>geplanes-3.0.3_new.sql</b> (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar) esteja no diretório Temp da Unidade C. Caso esteja em outro local, basta alterar o caminho acima.
+* Aqui, assume-se que o arquivo <i>geplanes-3.0.3_new.sql</i> (http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar) esteja no diretório Temp da Unidade C. Caso esteja em outro local, basta alterar o caminho acima.
 
 ## 2.3. Deploy da Versão 3.0.3
 
@@ -111,7 +111,7 @@ Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (http://www.softwarepu
 ## 3.5. Execução da Aplicação
 
 * Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação doJBoss)
-* Abra o browser (preferencialmente IE7 ou Firefox 3)
+* Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)
 * Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
 * Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
 
@@ -139,7 +139,7 @@ Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (http://www.softwarepu
 ## 4.5. Execução da Aplicação
 
 * Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)
-* Abra o browser (preferencialmente IE7 ou Firefox 3)
+* Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)
 * Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
 * Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
 
@@ -167,6 +167,6 @@ Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (http://www.softwarepu
 ##5.5. Execução da Aplicação
 
 * Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)
-* Abra o browser
+* Abra o <i>browser</i>
 * Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
 * Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)
