@@ -3,7 +3,7 @@
 * <b>ATENÇÃO:</b> Essa versão utiliza a metodologia do BSC (Balanced Scorecard) e, portanto, é incompatível com as versões anterioresà versão 3.0, que utilizam a metodologia GPD (Gerenciamento Pelas Diretrizes).
 
 
-* Caso você não possua nenhuma versão do Geplanes instalada, vá para o item: <b>Instalação do Geplanes - Versão 3.0.3</b>.* Caso você possua instalada a versão 3.0 do Geplanes, vá para o item: <b>Atualização da Versão 3.0 para a Versão 3.0.3</b>.* Caso você possua instalada a versão 3.0.1 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.1 para a Versão 3.0.3</b>.* Caso você possua instalada a versão 3.0.2 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.2 para a Versão 3.0.3</b>.
+* Caso você não possua nenhuma versão do Geplanes instalada, vá para o item: <b>Instalação do Geplanes - Versão 3.0.3</b>. * Caso você possua instalada a versão 3.0 do Geplanes, vá para o item: <b>Atualização da Versão 3.0 para a Versão 3.0.3</b>. * Caso você possua instalada a versão 3.0.1 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.1 para a Versão 3.0.3</b>. * Caso você possua instalada a versão 3.0.2 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.2 para a Versão 3.0.3</b>.
 
 ## 2. Instalação do Geplanes - Versão 3.0.3
 
