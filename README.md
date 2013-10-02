@@ -31,8 +31,7 @@ Em seguida, digite o seguinte comando para criar o banco de dados:
 
 Entre com a senha do usuário postgres e pronto. Está criado o banco de dados. Veja figura abaixo:
 
-
-
+![](https://github.com/admin-softwarepublicobrasileiro/Geplanes-jBoss4/blob/master/imagens/1.png) &nbsp;
 
 O próximo passo é executar o script para criação das tabelas do geplanes. Para isso, basta executar o seguinte comando:
 
