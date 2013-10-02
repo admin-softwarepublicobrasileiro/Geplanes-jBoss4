@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Manual de Instalação do Geplanes - JBoss4 by admin-softwarepublicobrasileiro</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Manual de Instalação do Geplanes - JBoss4</h1>
+        <p></p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/admin-softwarepublicobrasileiro/Geplanes-jBoss4" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/admin-softwarepublicobrasileiro/Geplanes-jBoss4/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/admin-softwarepublicobrasileiro/Geplanes-jBoss4/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h2>
+<a name="1-orienta%C3%A7%C3%B5es-gerais" class="anchor" href="#1-orienta%C3%A7%C3%B5es-gerais"><span class="octicon octicon-link"></span></a>1. Orientações Gerais</h2>
+
+<ul>
+<li>
+<b>ATENÇÃO:</b> Essa versão utiliza a metodologia do BSC (Balanced Scorecard) e, portanto, é incompatível com as versões anterioresà versão 3.0, que utilizam a metodologia GPD (Gerenciamento Pelas Diretrizes).</li>
+<li>Caso você não possua nenhuma versão do Geplanes instalada, vá para o item: <b>Instalação do Geplanes - Versão 3.0.3</b>.</li>
+<li>Caso você possua instalada a versão 3.0 do Geplanes, vá para o item: <b>Atualização da Versão 3.0 para a Versão 3.0.3</b>.</li>
+<li>Caso você possua instalada a versão 3.0.1 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.1 para a Versão 3.0.3</b>.</li>
+<li>Caso você possua instalada a versão 3.0.2 do Geplanes, vá para o item: <b>Atualização da Versão 3.0.2 para a Versão 3.0.3</b>.</li>
+</ul><h2>
+<a name="2-instala%C3%A7%C3%A3o-do-geplanes---vers%C3%A3o-303" class="anchor" href="#2-instala%C3%A7%C3%A3o-do-geplanes---vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>2. Instalação do Geplanes - Versão 3.0.3</h2>
+
+<h2>
+<a name="21-pr%C3%A9-requisitos" class="anchor" href="#21-pr%C3%A9-requisitos"><span class="octicon octicon-link"></span></a>2.1. Pré-Requisitos</h2>
+
+<ul>
+<li><p>Java Development Kit: JDK6 (Vide seção 2.1 do Manual de Instalação da Versão 1.0 em <a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf</a>)</p></li>
+<li><p>Banco de Dados: PostgreSQL 8.3.10-1 (Vide seção 2.2do Manual de Instalação da Versão 1.0 em <a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf</a>)</p></li>
+<li><p>Servidor de Aplicação: JBoss 4.0.5 GA (Vide seção 2.3 do Manual de Instalação da Versão 1.0 em <a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-gpd/vers-es/geplanes-1-0-0/Manual_de_Instala%c3%a7%c3%a3o_-_Windows%2epdf</a>)</p></li>
+</ul><h2>
+<a name="22-cria%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-do-banco-de-dados" class="anchor" href="#22-cria%C3%A7%C3%A3o-e-configura%C3%A7%C3%A3o-do-banco-de-dados"><span class="octicon octicon-link"></span></a>2.2. Criação e configuração do Banco de Dados</h2>
+
+<p>Inicialmente, crie um banco de dados com o nome <b>geplanes_bsc</b>.
+Para isso, proceda da seguinte forma:</p>
+
+<p>Abra o prompt de comando (<i>cmd.exe</i>) e vá até a pasta <b>bin</b> do diretório onde foi instalado o PostgreSQL.</p>
+
+<pre><code>c:\&gt; cd "c:\Program Files\PostgreSQL\8.3\bin"
+</code></pre>
+
+<p>Em seguida, digite o seguinte comando para criar o banco de dados:</p>
+
+<pre><code>c:\Program Files\PostgreSQL\8.3\bin&gt;createdb.exe -U postgres geplanes_bsc
+</code></pre>
+
+<p>Entre com a senha do usuário postgres e pronto. Está criado o banco de dados. Veja figura abaixo:</p>
+
+<p><img src="https://github.com/admin-softwarepublicobrasileiro/Geplanes-jBoss4/blob/master/imagens/1.png" alt="">  </p>
+
+<p>O próximo passo é executar o script para criação das tabelas do geplanes. Para isso, basta executar o seguinte comando:</p>
+
+<pre><code>c:\Program Files\PostgreSQL\8.3\bin&gt;psql.exe -U pos tgres -f c:\Temp\geplanes-3.0.3_new.sql -d geplanes _bsc
+</code></pre>
+
+<ul>
+<li>Aqui, assume-se que o arquivo <i>geplanes-3.0.3_new.sql</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3.0.3_new.sql.rar</a>) esteja no diretório Temp da Unidade C. Caso esteja em outro local, basta alterar o caminho acima.</li>
+</ul><h2>
+<a name="23-deploy-da-vers%C3%A3o-303" class="anchor" href="#23-deploy-da-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>2.3. Deploy da Versão 3.0.3</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar</a>), descompacte-o e copie a pasta <i>geplanes_bsc.war</i> para dentro do diretório <i>server/default/deploy</i> , localizado dentro do diretório de instalação do JBoss.</p>
+
+<h2>
+<a name="24-configura%C3%A7%C3%A3o-do-servidor-de-aplica%C3%A7%C3%A3o-jboss-para-acesso-ao-banco-de-dados" class="anchor" href="#24-configura%C3%A7%C3%A3o-do-servidor-de-aplica%C3%A7%C3%A3o-jboss-para-acesso-ao-banco-de-dados"><span class="octicon octicon-link"></span></a>2.4. Configuração do Servidor de Aplicação (JBoss) para acesso ao banco de dados</h2>
+
+<p>Faça o download do arquivo <i>geplanes_bsc_postgresql-ds.xml.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc_postgresql-ds%2exml%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc_postgresql-ds%2exml%2erar</a>), descompacte-o e configure (via bloco de notas ou qualquer outro editor de texto) os parâmetros de acesso ao banco de dados. Posteriormente, copie esse arquivo para a pasta <i>server/default/deploy</i> do diretório de instalação do JBoss.</p>
+
+<p>Caso o Geplanes seja acessado via rede, você precisará criar pelo menos mais um bloco de configuração de acesso ao banco de dados dentro do arquivo <i>geplanes _bsc_postgresql-ds.xml</i>. Imagine que o Geplanes tenha sido instalado na máquina cujo IP seja <b>192.168.1.54</b> e cujo nome seja <b>srv54</b>.</p>
+
+<p>Para que o Geplanes seja acessado pela URL <b><a href="http://192.168.1.54:8080/geplanes_bsc">http://192.168.1.54:8080/geplanes_bsc</a></b> é necessária a criação do seguinte bloco de código dentro do arquivo <i>geplanes_bsc_postgresql-ds.xml</i>:</p>
+
+<pre><code>&lt;local-tx-datasource&gt;
+   &lt;jndi-name&gt;192.168.1.54_geplanes_bsc_PostgreSQLDS&lt;/jndi-name&gt;
+   &lt;connection-url&gt;jdbc:postgresql://localhost/geplanes_bsc&lt;/connection-url&gt;
+   &lt;driver-class&gt;org.postgresql.Driver&lt;/driver-class&gt;
+   &lt;user-name&gt;postgres&lt;/user-name&gt;
+   &lt;password&gt;postgres&lt;/password&gt;
+   &lt;metadata&gt;
+      &lt;type-mapping&gt;PostgreSQL 7.2&lt;/type-mapping&gt;
+   &lt;/metadata&gt;
+&lt;/local-tx-datasource&gt;
+</code></pre>
+
+<p>Para que o Geplanes seja acessado pela URL <b>http://srv54:8080/geplanes_bsc</b> é necessária a criação do seguinte bloco de código dentro do arquivo <i>geplanes_bsc_postgresql-ds.xml</i>:</p>
+
+<pre><code>&lt;local-tx-datasource&gt;
+   &lt;jndi-name&gt;srv54_geplanes_bsc_PostgreSQLDS&lt;/jndi-name&gt;
+   &lt;connection-url&gt;jdbc:postgresql://localhost/geplanes_bsc&lt;/connection-url&gt;
+   &lt;driver-class&gt;org.postgresql.Driver&lt;/driver-class&gt;
+   &lt;user-name&gt;postgres&lt;/user-name&gt;
+   &lt;password&gt;postgres&lt;/password&gt;
+   &lt;metadata&gt;
+      &lt;type-mapping&gt;PostgreSQL 7.2&lt;/type-mapping&gt;
+   &lt;/metadata&gt;
+&lt;/local-tx-datasource&gt;
+</code></pre>
+
+<p>Lembrando que, caso necessário, os parâmetros de acesso tais como nome e senha do usuário devem ser alterados.</p>
+
+<p>Por fim, para que seja possível o Geplanes acessar as informações do banco de dados PostgreSQL, é necessário que o driver JDBC correspondente esteja disponível para o JBoss. Sendo assim, copie o arquivo <i>postgresql-8.3-603.jdbc4.jar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/bibliotecas/postgresql-8%2e3-603%2ejdbc4%2ejar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/bibliotecas/postgresql-8%2e3-603%2ejdbc4%2ejar</a>) para a pasta <i>server/default/lib</i> do diretório de instalação do JBoss.</p>
+
+<h2>
+<a name="25-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o" class="anchor" href="#25-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>2.5. Execução da Aplicação</h2>
+
+<ul>
+<li>Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)</li>
+<li>Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)</li>
+<li>Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
+</li>
+<li>Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)</li>
+</ul><h2>
+<a name="3atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-30-para-a-vers%C3%A3o-303" class="anchor" href="#3atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-30-para-a-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>3.Atualização da Versão 3.0 para a Versão 3.0.3</h2>
+
+<h2>
+<a name="31-pr%C3%A9-requisitos" class="anchor" href="#31-pr%C3%A9-requisitos"><span class="octicon octicon-link"></span></a>3.1. Pré-Requisitos</h2>
+
+<ul>
+<li>Sistema Geplanes 3.0 instalado.</li>
+</ul><h2>
+<a name="32-undeploy-da-vers%C3%A3o-anterior" class="anchor" href="#32-undeploy-da-vers%C3%A3o-anterior"><span class="octicon octicon-link"></span></a>3.2. Undeploy da Versão anterior</h2>
+
+<ul>
+<li>Caso o JBoss esteja ligado, desligue-o.</li>
+<li>Remova a pasta <i>geplanes_bsc.war</i> do diretório <i>server/default/deploy</i>, localizado dentro do diretório de instalação do JBoss.</li>
+<li>Vá até a pasta <i>/server/default/tmp</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+<li>Vá até a pasta <i>/server/default/work</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+</ul><h2>
+<a name="33-atualiza%C3%A7%C3%A3o-do-banco-de-dados" class="anchor" href="#33-atualiza%C3%A7%C3%A3o-do-banco-de-dados"><span class="octicon octicon-link"></span></a>3.3. Atualização do Banco de Dados</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0_to-3.0.3.sql.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3%2e0_to-3%2e0%2e3%2esql%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3%2e0_to-3%2e0%2e3%2esql%2erar</a>), descompacte-o e execute o script SQL no(s) banco(s) de dados do Geplanes.</p>
+
+<h2>
+<a name="34-deploy-da-vers%C3%A3o-303" class="anchor" href="#34-deploy-da-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>3.4. Deploy da Versão 3.0.3</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar</a>), descompacte-o e copie a pasta <i>geplanes_bsc.war</i> para dentro do diretório <i>server/default/deploy</i>, localizado dentro do diretório deinstalação do JBoss.</p>
+
+<h2>
+<a name="35-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o" class="anchor" href="#35-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>3.5. Execução da Aplicação</h2>
+
+<ul>
+<li>Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação doJBoss)</li>
+<li>Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)</li>
+<li>Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
+</li>
+<li>Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)</li>
+</ul><h2>
+<a name="4atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-301-para-a-vers%C3%A3o-303" class="anchor" href="#4atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-301-para-a-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>4.Atualização da Versão 3.0.1 para a Versão 3.0.3</h2>
+
+<h2>
+<a name="41-pr%C3%A9-requisitos" class="anchor" href="#41-pr%C3%A9-requisitos"><span class="octicon octicon-link"></span></a>4.1. Pré-Requisitos</h2>
+
+<ul>
+<li>Sistema Geplanes 3.0.1 instalado.</li>
+</ul><h2>
+<a name="42-undeploy-da-vers%C3%A3o-anterior" class="anchor" href="#42-undeploy-da-vers%C3%A3o-anterior"><span class="octicon octicon-link"></span></a>4.2. Undeploy da Versão anterior</h2>
+
+<ul>
+<li>Caso o JBoss esteja ligado, desligue-o.</li>
+<li>Remova a pasta <i>geplanes_bsc.war</i> do diretório <i>server/default/deploy</i>, localizado dentro do diretório de instalação do JBoss.</li>
+<li>Vá até a pasta <i>/server/default/tmp</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+<li>Vá até a pasta <i>/server/default/work</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+</ul><h2>
+<a name="43-atualiza%C3%A7%C3%A3o-do-banco-de-dados" class="anchor" href="#43-atualiza%C3%A7%C3%A3o-do-banco-de-dados"><span class="octicon octicon-link"></span></a>4.3. Atualização do Banco de Dados</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0.1_to-3.0.3.sql.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3%2e0%2e1_to-3%2e0%2e3%2esql%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes-3%2e0%2e1_to-3%2e0%2e3%2esql%2erar</a>), descompacte-o e execute o script SQL no(s) banco(s) de dados do Geplanes.</p>
+
+<h2>
+<a name="44-deploy-da-vers%C3%A3o-303" class="anchor" href="#44-deploy-da-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>4.4. Deploy da Versão 3.0.3</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar</a>), descompacte-o e copie a pasta <i>geplanes_bsc.war</i> para dentro do diretório <i>server/default/deploy</i>, localizado dentro do diretório de instalação do JBoss.</p>
+
+<h2>
+<a name="45-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o" class="anchor" href="#45-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>4.5. Execução da Aplicação</h2>
+
+<ul>
+<li>Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)</li>
+<li>Abra o <i>browser</i> (preferencialmente IE7 ou Firefox 3)</li>
+<li>Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
+</li>
+<li>Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)</li>
+</ul><h2>
+<a name="5-atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-302-para-a-vers%C3%A3o-303" class="anchor" href="#5-atualiza%C3%A7%C3%A3o-da-vers%C3%A3o-302-para-a-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>5. Atualização da Versão 3.0.2 para a Versão 3.0.3</h2>
+
+<h2>
+<a name="51-pr%C3%A9-requisitos" class="anchor" href="#51-pr%C3%A9-requisitos"><span class="octicon octicon-link"></span></a>5.1. Pré-Requisitos</h2>
+
+<ul>
+<li>Sistema Geplanes 3.0.2 instalado.</li>
+</ul><h2>
+<a name="52-undeploy-da-vers%C3%A3o-anterior" class="anchor" href="#52-undeploy-da-vers%C3%A3o-anterior"><span class="octicon octicon-link"></span></a>5.2. Undeploy da Versão anterior</h2>
+
+<ul>
+<li>Caso o JBoss esteja ligado, desligue-o.</li>
+<li>Remova a pasta <i>geplanes_bsc.war</i> do diretório <i>server/default/deploy</i>, localizado dentro do diretório de instalação do JBoss.</li>
+<li>Vá até a pasta <i>/server/default/tmp</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+<li>Vá até a pasta <i>/server/default/work</i> do diretório de instalação do JBoss e apague todo o seu conteúdo, deixando-a vazia.</li>
+</ul><h2>
+<a name="53-atualiza%C3%A7%C3%A3o-do-banco-de-dados" class="anchor" href="#53-atualiza%C3%A7%C3%A3o-do-banco-de-dados"><span class="octicon octicon-link"></span></a>5.3. Atualização do Banco de Dados</h2>
+
+<ul>
+<li>Não houve atualização do banco de dados.</li>
+</ul><h2>
+<a name="54-deploy-da-vers%C3%A3o-303" class="anchor" href="#54-deploy-da-vers%C3%A3o-303"><span class="octicon octicon-link"></span></a>5.4. Deploy da Versão 3.0.3</h2>
+
+<p>Faça o download do arquivo <i>geplanes-3.0.3.war.rar</i> (<a href="http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar">http://www.softwarepublico.gov.br/dotlrn/clubs/geplanes/file-storage/view/metodologia-bsc/vers-es/geplanes-3-0-3/geplanes_bsc-3%2e0%2e3%2ewar%2erar</a>), descompacte-o e copie a pasta <i>geplanes_bsc.war</i> para dentro do diretório <i>server/default/deploy</i>, localizado dentro do diretório de instalação do JBoss.</p>
+
+<h2>
+<a name="55-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o" class="anchor" href="#55-execu%C3%A7%C3%A3o-da-aplica%C3%A7%C3%A3o"><span class="octicon octicon-link"></span></a>5.5. Execução da Aplicação</h2>
+
+<ul>
+<li>Inicie o JBoss (execute o arquivo <i>run.bat</i> dentro da pasta <b>bin</b> do diretório de instalação do JBoss)</li>
+<li>Abra o <i>browser</i>
+</li>
+<li>Digite a URL: <b>http://localhost:8080/geplanes_bsc</b>
+</li>
+<li>Entre com os dados de usuário (LOGIN/SENHA): (Default: admin/admin)</li>
+</ul>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/admin-softwarepublicobrasileiro">admin-softwarepublicobrasileiro</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
