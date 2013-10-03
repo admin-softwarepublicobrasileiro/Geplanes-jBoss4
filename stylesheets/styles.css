@@ -826,12 +826,12 @@ nav {
 nav ul {
   list-style: none;
   list-style-image: none;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 24px;
 }
 nav ul li {
   padding: 5px 0px;
-  line-height: 16px;
+  line-height: 10px;
 }
 nav ul li.tag-h1 {
   font-size: 1.2em;
